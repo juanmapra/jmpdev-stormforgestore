@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /potrerodigital/proyecto_final/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^product/(\d+)$ pages/product.php?id=$1 [QSA,L]
